@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --out-bg: #f4ede5;
+    --btn-bg: #f34949;
+    --section-bg: #f7f8f9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--out-bg);
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "PT Sans", sans-serif;
+
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 10px !important;
+    }
+}
+
+/*TODO ********************************** Global Style ***********************************/
+.container {
+    background-color: white;
+}
+
+.intro,
+h2,
+h3,
+.dish span,
+.menu h4 {
+    font-family: "Josefin Sans", sans-serif !important;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+}
+
+.special:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 35px 0px #cdcccc;
+    border-radius: 20px;
+    background-color: var(--out-bg);
+}
+
+.waffle,
+.specialDishes img {
+    box-shadow: 0px 1px 35px 0px #cdcccc;
+}
+
+.colored,
+.special p {
+    color: var(--btn-bg);
+}
+
+/*TODO ********************************** Global Style ***********************************/
+
+/*! ****************************** Navbar ********************************/
+nav {
+    margin-top: 30px !important;
+}
+
+/* .navbar {
+    position: sticky;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+} */
+
+nav a i {
+    color: black !important;
+    padding-right: 40px !important;
+}
+
+nav a:hover,
+nav i:hover {
+    color: var(--btn-bg) !important;
+}
+
+.navImage {
+    width: 10% !important;
+}
+
+@media (max-width:1200px) {
+    .navImage {
+        width: 25% !important;
+    }
+}
+
+/*! ****************************** Intro ********************************/
+.introCard h1 {
+    font-size: 3.5rem !important;
+}
+
+.intro button {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bolder !important;
+}
+
+.btnOne {
+    background-color: var(--btn-bg);
+    height: 40px;
+    width: 30%;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.btnTwo {
+    background-color: transparent;
+    height: 40px;
+    width: 40%;
+    letter-spacing: 1px;
+}
+
+.btnTwo svg {
+    width: 25px;
+}
+
+.btnOne:hover,
+.btnTwo:hover,
+footer button:hover {
+    background-color: var(--out-bg) !important;
+    color: var(--btn-bg) !important;
+}
+
+.introIcon {
+    border-right: 1px solid #ddd;
+}
+
+.introIcon svg {
+    position: relative;
+    left: 40px;
+    width: 35px;
+}
+
+.introRight button {
+    top: 75% !important;
+    background-color: white !important;
+    width: 100px;
+    height: 130px;
+    opacity: 8;
+}
+
+.introRight button:hover {
+    box-shadow: none;
+}
+
+.firstArrow {
+    left: 59% !important;
+}
+
+@media (max-width:1400px) {
+    .firstArrow {
+        left: 0 !important;
+    }
+
+    .introRight button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:1200px) {
+    .btnOne {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:992px) {
+    .btnOne {
+        width: 30%;
+    }
+
+    .introRight {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width:576px) {
+    .intro .row {
+        gap: 30px;
+    }
+}
+
+/*! ****************************** Welcome ********************************/
+@media (max-width:991px) {
+    .waffle {
+        width: 50% !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .welcomeCard {
+        gap: 30px;
+    }
+}
+
+@media (max-width:575px) {
+    .welcomeCard .row {
+        gap: 30px;
+    }
+
+    .special {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .special img {
+        width: 50% !important;
+    }
+
+    .special p {
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+
+/*! ****************************** S-Dishes ********************************/
+.specialDishes {
+    background-color: var(--section-bg);
+}
+
+.specialDishes button {
+    width: 40% !important;
+}
+
+.dish span {
+    font-weight: 400;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    height: 1px;
+    width: 35%;
+    display: block;
+    background-color: black;
+    position: absolute;
+    left: 19%;
+    top: 47%;
+}
+
+@media (max-width:1200px) {
+    .line {
+        padding-left: 3px !important;
+    }
+
+    .specialDishes button {
+        width: 50% !important;
+    }
+}
+
+@media (max-width:992px) {
+    .dishImage {
+        width: 100% !important;
+    }
+
+    .specialDishes img {
+        width: 50% !important;
+    }
+}
+
+@media (max-width:800px) {
+    .specialDishes button {
+        width: 30% !important;
+    }
+}
+
+@media (max-width:590px) {
+    .specialDishes img {
+        width: 40% !important;
+    }
+}
+
+@media (max-width:576px) {
+    .specialDishes .row {
+        gap: 30px !important;
+    }
+}
+
+/*! ****************************** Menu ********************************/
+.menuCard span {
+    color: #7a8792;
+    font-family: "Josefin Sans", sans-serif !important;
+    font-weight: 300;
+}
+
+.menuCard p {
+    font-size: 14px;
+}
+
+.menu hr {
+    border-style: dashed;
+}
+
+@media (max-width:992px) {
+    .menu h4 {
+        padding-top: 10px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .menuCard img {
+        width: 70% !important;
+        margin-left: 20px;
+    }
+}
+
+/*! **************************** Testimony ******************************/
+.testimony p {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300;
+}
+
+.testimony img {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.background {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgb(0 0 0 / 40%));
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.carouselCard {
+    height: 500px !important;
+}
+
+.eggImage {
+    height: 430px;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.mary {
+    font-size: 14px;
+    font-weight: 400 !important;
+    font-family: "PT Sans", sans-serif !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+/*! ****************************** Chef ********************************/
+.name {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 15px;
+    background: white;
+    width: 60%;
+    height: 65px;
+    color: black;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.name:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+
+    .overlay h4,
+    .overlay p {
+        font-size: 14px !important;
+    }
+
+    .overlay {
+        height: 50px;
+    }
+}
+
+/*! ****************************** Form ********************************/
+.bookNow {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgb(0 0 0 / 40%)), url(../img/reservation-bg.jpg);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reservation {
+    position: relative;
+    margin: 7% 0 0 7%;
+    background-color: white;
+    width: 35%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+}
+
+.reservation button {
+    width: 40%;
+    margin: auto;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input {
+    height: 40px;
+    border-radius: 4px;
+}
+
+input,
+textarea {
+    border: 1px solid #e2e6e9;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding-left: 15px;
+}
+
+.dateTime input {
+    width: 50%;
+}
+
+@media (max-width:1400px) {
+    .reservation button {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:992px) {
+    .reservation {
+        width: 50% !important;
+    }
+
+    .bookNow {
+        background-position: center;
+    }
+}
+
+/*! ****************************** Footer ********************************/
+footer {
+    padding-top: 25%;
+}
+
+.footerLogo {
+    width: 45%;
+    position: relative;
+    bottom: 30px;
+}
+
+footer input {
+    width: 100% !important;
+}
+
+footer button {
+    width: 100% !important;
+}
+
+@media (max-width:992px) {
+    footer .row {
+        gap: 30px !important;
+    }
+
+    .footerLogo {
+        width: 30% !important;
+        padding-top: 35px;
+    }
+
+    .footerRight {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width:801px) {
+    .footerLogo {
+        padding-top: 0;
+    }
+}

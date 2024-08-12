@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="keywords" content="website, blog, foo, bar" />
+    <meta name="author" content="" />
+    <meta name="publisher" content="" />
+    <meta name="copyright" content="" />
+    <meta name="description" content="" />
+    <meta name="page-topic" content="" />
+    <meta name="page-type" content="" />
+    <meta name="audience" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="icon" href="./img/brand 2.png" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Resto</title>
+</head>
+
+<body>
+    <!--!-------------------------------------------- Navbar ---------------------------------------------->
+    <nav class="navbar navbar-expand-xl container pt-3">
+        <div class="container-fluid text-capitalize">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mainNav d-flex justify-content-center justify-content-evenly w-100">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                special dishes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">salmon</a></li>
+                                <li><a class="dropdown-item" href="#">beef</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navImage">
+                        <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                    </div>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </nav>
+
+    <!--*-------------------------------------------- Intro ----------------------------------------------->
+    <div class="container text-capitalize py-5 intro">
+        <div class="row d-flex align-items-center justify-content-center gy-md-5 gy-sm-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 px-5">
+                <div class="introCard">
+                    <h1 class="fw-light">we love <br> delicious foods!</h1>
+                    <div class="introBtn mt-5">
+                        <button class="btnOne rounded-pill">Explore Menu</button>
+                        <button class="btnTwo rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-play-btn" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                            </svg> play Video</button>
+                    </div>
+                    <div class="d-flex flex-row mt-5 text-center love align-items-center">
+                        <div class="d-flex flex-column  introIcon px-4">
+                            <i class="fa-solid fa-rocket fs-2"></i>
+                            <span class="fs-5 pt-3">fast delivery</span>
+                        </div>
+                        <div class="d-flex flex-column introIcon px-4">
+                            <i class="fa-solid fa-leaf fs-2"></i>
+                            <span class="fs-5 pt-3">fresh food</span>
+                        </div>
+                        <div class="d-flex flex-column ps-4">
+                            <i class="fa-regular fa-comment fs-2"></i>
+                            <span class="fs-5 pt-3">24/7 support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-end introRight px-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade w-75">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/hero-1.jpg" class="d-block w-100" alt="Menu 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/hero-2.jpg" class="d-block w-100" alt="Menu 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/hero-3.jpg" class="d-block w-100" alt="Menu 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev firstArrow text-black" type="button"
+                        data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control" aria-hidden="true"><i
+                                class="fa-solid fa-angle-left fs-4"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next text-black" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control" aria-hidden="true"><i
+                                class="fa-solid fa-angle-right fs-4"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--!-------------------------------------------- Welcome --------------------------------------------->
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-lg-5 col-md-12 col-sm-12 ps-4 d-flex justify-content-center pb-5">
+                <img src="./img/hero-2.jpg" alt="Waffle" class="w-100 waffle">
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 px-5">
+                <div class="welcomeCard">
+                    <h6 class="colored mb-0">About</h6>
+                    <h2 class="fw-bold mb-3">Welcome to Resto</h2>
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                        would have been rewritten a thousand times and everything that was left from its origin would be
+                        the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <div class="row text-capitalize pt-4">
+                        <h3>special recipe</h3>
+                        <div class="col-lg-4  col-sm-4">
+                            <div class="special w-75">
+                                <img src="./img/hero-1.jpg" alt="Organic" class="w-100">
+                                <p class="px-2 py-1">australian organic beef</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-sm-4">
+                            <div class="special w-75">
+                                <img src="./img/hero-1.jpg" alt="Organic" class="w-100">
+                                <p class="px-2 py-1">australian organic beef</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-sm-4">
+                            <div class="special w-75">
+                                <img src="./img/hero-1.jpg" alt="Organic" class="w-100">
+                                <p class="px-2 py-1">australian organic beef</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--*------------------------------------------- S-Dishes --------------------------------------------->
+    <div class="container specialDishes py-5">
+        <div class="row d-flex align-items-center flex-row gap-3">
+            <div class="center text-center text-capitalize">
+                <span class="colored">specialties</span>
+                <h2>special dishes</h2>
+            </div>
+            <div class="col-12 pt-5">
+                <div class="row d-flex align-items-center gap-lg-0 gap-sm-3">
+                    <div class="col-lg-6 col-md-12 col-sm-12 px-5">
+                        <h2 class="fw-bold fs-1 line ps-5">01.</h2>
+                        <div class="dish px-5 ms-5">
+                            <h3 class="colored text-capitalize">beef</h3>
+                            <h3 class="text-capitalize">steak sauce</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias
+                                perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident
+                                libero qui eum, corporis esse quos excepturi soluta?</p>
+                            <span class="fs-4">$15.00</span> <br>
+                            <button class="btnOne rounded-pill mt-3">Book A Table</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 w-50 d-flex justify-content-center dishImage">
+                        <img src="./img/steak.jpg" alt="Steak" class="one">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-4">
+                <div class="row d-flex align-items-center gap-lg-0 gap-sm-3">
+                    <div class="col-lg-6 col-md-12 col-sm-12 w-50 d-flex justify-content-center dishImage">
+                        <img src="./img/salmon-zucchini.jpg" alt="Salmon">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 px-5">
+                        <h2 class="fw-bold fs-1 line ps-5">02.</h2>
+                        <div class="dish px-5 ms-5">
+                            <h3 class="colored text-capitalize">salmon</h3>
+                            <h3 class="text-capitalize">zucchini</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias
+                                perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident
+                                libero qui eum, corporis esse quos excepturi soluta?</p>
+                            <span class="fs-4">$15.00</span> <br>
+                            <button class="btnOne rounded-pill mt-3">Book A Table</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--!--------------------------------------------- Menu ----------------------------------------------->
+    <div class="container py-5 menu">
+        <div class="center text-center text-capitalize py-5">
+            <span class="colored">specialties</span>
+            <h2 class="fw-bold">our menu</h2>
+        </div>
+        <div class="row text-capitalize px-5">
+            <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+                <h4 class="text-center mb-5">breakfast</h4>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+                <h4 class="text-center mb-5">breakfast</h4>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 px-3">
+                <h4 class="text-center mb-5">breakfast</h4>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex flex-row align-items-center menuCard">
+                    <div class="col-3">
+                        <img src="./img/breakfast-1.jpg" alt="Egg" class="rounded-circle w-100">
+                    </div>
+                    <div class="col-9">
+                        <h5>egg sandwich <span class="float-end">$30</span></h5>
+                        <p class="mb-0">meat ball, mie</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!--*------------------------------------------- Testimony -------------------------------------------->
+    <div class="container py-5 testimony">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators mb-5">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner carouselCard">
+                <div class="carousel-item active eggImage">
+                    <img src="./img/testi-bg.jpg" class="d-block" alt="Egg sandwich">
+                    <div class="background"></div>
+                    <div class="carousel-caption d-md-block text-capitalize pb-0">
+                        <span class="colored">testimony</span>
+                        <h2 class="fw-bold">happy customer</h2>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="pt-3 fs-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                            vero quas cum excepturi doloremque! Minus.</p>
+                        <p class="pt-4 mary">mary jane</p>
+                        <p>CTO of <span class="colored fw-bold">unidentity inc</span> </p>
+                    </div>
+                </div>
+                <div class="carousel-item eggImage">
+                    <img src="./img/testi-bg.jpg" class="d-block" alt="Egg sandwich">
+                    <div class="background"></div>
+                    <div class="carousel-caption d-md-block text-capitalize pb-0">
+                        <span class="colored">testimony</span>
+                        <h2 class="fw-bold">happy customer</h2>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="pt-3 fs-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                            fugiat et incidunt</p>
+                        <p class="pt-4 mary">mary jane</p>
+                        <p>CTO of <span class="colored fw-bold">unidentity inc</span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--!--------------------------------------------- Chef ----------------------------------------------->
+    <div class="container py-5 chef">
+        <div class="center text-center text-capitalize py-5">
+            <span class="colored">specialties</span>
+            <h2 class="fw-bold">our team</h2>
+        </div>
+        <div class="row d-flex flex-wrap px-5 pb-5 mb-5">
+            <div class="col-4 d-flex justify-content-center name">
+                <img src="./img/chef-1.jpg" alt="Chef" class="chefOne w-75">
+                <div class="overlay text-capitalize">
+                    <h4>araon patel</h4>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center name">
+                <img src="./img/chef-2.jpg" alt="Chef" class="ChefTwo w-75">
+                <div class="overlay text-capitalize">
+                    <h4>daniel tebas</h4>
+                    <p>chef</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center name">
+                <img src="./img/chef-3.jpg" alt="Chef" class="ChefThree w-75">
+                <div class="overlay text-capitalize">
+                    <h4>jhon snow</h4>
+                    <p>chef</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--*--------------------------------------------- Form ----------------------------------------------->
+    <div class="container py-5 bookNow">
+        <form action="#" class="reservation px-5 text-center py-4 d-flex flex-column gap-3 justify-content-center">
+            <div class="center text-capitalize">
+                <span class="colored">reservation</span>
+                <h2 class="fw-bold">book now</h2>
+            </div>
+            <input type="text" name="userName" id="name" placeholder="Name" required>
+            <input type="email" name="userEmail" id="email" placeholder="Email" required>
+            <input type="tel" name="userNumber" id="mobile" placeholder="Phone" required>
+            <div class="d-flex flex-row gap-3 dateTime">
+                <input type="date" name="userDate" id="date">
+                <input type="time" name="userTime" id="time">
+            </div>
+            <input type="number" name="person" id="number" placeholder="Person">
+            <textarea name="comment" id="userMessage" cols="45" rows="5" placeholder="Your Message..."
+                class="rounded"></textarea>
+            <button class="btnOne rounded-pill">Send Message</button>
+        </form>
+    </div>
+
+    <!--!-------------------------------------------- Footer ---------------------------------------------->
+    <div class="container mb-5">
+        <footer class="pb-5 bg-white section-padding px-5">
+            <div class="inner container">
+                <div class="row d-flex flex-wrap">
+                    <div class="col-lg-4 pe-5">
+                        <div class="footerLeft pe-lg-5 pe-0">
+                            <img src="img/logo.png" class="footerLogo" alt="Logo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
+                                omnis
+                                explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi?
+                                Magni,
+                                et voluptatum dolorem.
+                            </p>
+                            <nav class="nav nav-mastfoot justify-content-start">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footerMiddle ">
+                            <h4>Open Hours</h4>
+                            <ul class="list-unstyled open-hours">
+                                <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Tuesday</span><span>9:00 - 24:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Wednesday</span><span>9:00 -
+                                        24:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Thursday</span><span>9:00 -
+                                        24:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Friday</span><span>9:00 - 02:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Saturday</span><span>9:00 -
+                                        02:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footerRight ps-5">
+                            <h4>Newsletter</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <form id="newsletter">
+                                <div class="form-group d-flex flex-column gap-3">
+                                    <input type="email" name="userEmail" id="email" placeholder="Enter Email">
+                                    <button class="btn btnOne rounded-pill" type="button">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center">
+                        <p class="mx-auto text-center mb-0 pt-5">Copyright 2019. All Right Reserved. Design by <a
+                                style="text-decoration: none; color: #f34949;" href="#" target="_blank">GetTemplates</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
